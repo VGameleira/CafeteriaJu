@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italiana&family=Jockey+One&family=Just+Me+Again+Down+Here&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Just+Me+Again+Down+Here&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap');
+
 
 
 
@@ -7,5 +9,80 @@
     --cor-secundaria: #FFF0D1;
     --cor-terciaria: #000000;
     --cor-quarta: #fff;
+}
+
+/* header */
+header{
+    width: 100vw;
+    height: 200px;
+
+    background-color: var(--cor-principal);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__title{
+    color: var(--cor-secundaria);
+    font-family: "Just me again down here", sans-serif;
+    font-size: 80px;
+}
+
+.header__title--brown {
+    color: rgba(241, 198, 112, 0.969);
+    font-size: 80px;
+    font-family: "Just me again down here", sans-serif;
+    
+
+}
+
+/* Navegação */
+.nav{
+    padding: 10px;
+
+    
+}
+
+.nav__lista{
+
+    gap: 20px;
+    list-style: none;
+    
+}
+
+.nav__lista--itens{
+    display: inline;
+    margin: 0 10px;
+    color: var(--cor-secundaria);
+    font-family: "Lekton", sans-serif;
+    font-size: 32px;
+    
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 408px;
+    height: 304px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    
+    border-radius: 25px;
+    background-color: grey;
+    box-shadow: 0px 4px 4px 0px black;
+    
+    position: relative;
+    left: 100px; 
+}
+
+#Beneficios{
+    background-color: var(--cor-secundaria);
+}
+
+#Depoimento{
+    background-color: var(--cor-terciaria);
+    color: white;
 }
 
