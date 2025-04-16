@@ -12,53 +12,57 @@
 }
 
 /* header */
-header{
+header {
     width: 100vw;
-    height: 200px;
-
+    height: 300px; 
     background-color: var(--cor-principal);
-
+  
     display: flex;
+    
     justify-content: center;
     align-items: center;
-}
-
-.header__title{
+    text-align: center;
+    gap: 20px; 
+  }
+    
+    .header__title {
     color: var(--cor-secundaria);
     font-family: "Just me again down here", sans-serif;
-    font-size: 80px;
-}
+    font-size: 80px; 
+    }
 
-.header__title--brown {
+    
+    .header__title--brown {
     color: rgba(241, 198, 112, 0.969);
     font-size: 80px;
     font-family: "Just me again down here", sans-serif;
+    }
     
-
-}
-
-/* Navegação */
-.nav{
-    padding: 10px;
+     /* Navegação  */
+    .nav {
+    padding: 10px; 
+    }
 
     
-}
-
-.nav__lista{
-
-    gap: 20px;
-    list-style: none;
+    .nav__lista {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+      }
+      
     
-}
-
-.nav__lista--itens{
+    .nav__lista--itens {
     display: inline;
     margin: 0 10px;
     color: var(--cor-secundaria);
     font-family: "Lekton", sans-serif;
     font-size: 32px;
+    }
     
-}
+
+
 
 .form{
     display: flex;
@@ -84,5 +88,24 @@ header{
 #Depoimento{
     background-color: var(--cor-terciaria);
     color: white;
+    font-family: sans-serif;
+}
+
+#Beneficios div{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+
+.Beneficios-itens{
+    background-color: white;
+    border: 1px solid black;
+    width: 300px;
+    height: 200px;
+
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
 }
 
