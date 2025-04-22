@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<!DOCTYPE html>
-<html lang="pt-BR">
+
 
 <head>
     <meta charset="UTF-8">
@@ -14,113 +13,152 @@
 <body>
     <header class="header">
 
-        <i class="fa-solid fa-mug-saucer"></i>
-        <h1 class="header__title">Ju</h1>
-        <span class="header__title--brown">Café</span>
+
+        <div class="header__logo">
+            <h1 class="header__title">Ju</h1>
+            <span class="header__title--brown">Café</span>
+        </div>
 
         <nav class="nav">
             <ul class="nav__lista">
-                <li class="nav__lista--itens">Benefícios</li>
-                <li class="nav__lista--itens">Depoimentos</li>
-                <li class="nav__lista--itens">Fraquias</li>
+                <a href="#Beneficios">
+                    <li class="nav__lista--itens">Benefícios</li>
+                </a>
+                <a href="#Depoimento">
+                    <li class="nav__lista--itens">Depoimentos</li>
+                </a>
+                <a href="#ModeloNegocio">
+                    <li class="nav__lista--itens">Fraquias</li>
+                </a>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div class="banner">
-
-        </div>
-
-
-        <form class="form" action="">
-            <h2>Seja nosso fraqueado!</h2>
-            <p>Uma das redes que mais cresce no Brasil</p>
-            <div>
-                <input class="form__btn" type="button" value="Saber mais">
-                <input class="form__btn form__btn--action" type="submit" value="Registrar interesse">
+        <section class="franqueado">
+            <div class="franqueado-bg">
+                <img src="img/banner_Dsk.png" alt="Café" class="cafe-img">
+                <div class="franqueado-card">
+                    <h2>Seja nosso <strong>franqueado</strong>!</h2>
+                    <p>Uma das redes que <span class="destaque">mais cresce</span> no Brasil</p>
+                    <div class="botoes">
+                        <a href="#" class="btn branco">Saber mais</a>
+                        <a href="#" class="btn laranja">Registrar interesse</a>
+                    </div>
+                </div>
             </div>
-        </form>
-
-
-
+        </section>
 
 
         <section id="Beneficios">
-            <h2>Benefícios e Vantagens</h2>
-
-            <div>
-            <article class="Beneficios-itens">
-                <img src="img/Increase.png" alt="">
-                <h3>Um mercado em expansão!</h3>
-                <p>Projeção de 15% de crescimento do franchising em 2024</p>
-            </article>
-
-
-            <article class="Beneficios-itens">
-                <i class="fa-solid fa-sack-dollar"></i>
-                <h3>Ótimos rendimentos</h3>
-                <p>Mercado de franquia alimentícia fatura em média 52bi</p>
-            </article>
-
-
-            <article class="Beneficios-itens">
-                <i class="fa-solid fa-people-robbery"><i>
-                        <h3>Suporte e Treinamentos</h3>
-                        <p>Todo apoio que o novo franqueado necessita!</p>
-            </article>
-        </div>
+            <div class="beneficios-titulo">
+                <h2>Benefícios e Vantagens</h2>
+            </div>
+        
+            <div class="Beneficios-itens--container">
+                <article class="Beneficios-itens">
+                    <img src="img/Increase.png" alt="Mercado em expansão">
+                    <h3>Um mercado em expansão!</h3>
+                    <p>Projeção de 15% de crescimento do franchising em 2024</p>
+                </article>
+        
+                <article class="Beneficios-itens">
+                    <img src="img/Rendimentos.png" alt="Ótimos rendimentos">
+                    <h3>Ótimos rendimentos</h3>
+                    <p>Mercado de franquia alimentícia fatura em média 52bi</p>
+                </article>
+        
+                <article class="Beneficios-itens">
+                    <img src="img/Suporte.png" alt="Suporte e treinamentos">
+                    <h3>Suporte e Treinamentos</h3>
+                    <p>Todo apoio que o novo franqueado necessita!</p>
+                </article>
+            </div>
+        </section>
+        
 
 
         </section>
         <section id="Depoimento">
-            <h2>Depoimento</h2>
-            <article>
-                <p>“Sempre gostei de café mas nunca pensei em transformar isto em um negócio, mas quando conheci a
-                    JuCafé e
-                    seu modelo de negócio passei a vislumbrar um futuro promissor atuando com um produto que aprecio.
-                </p>
-                <p>Estou muito realizada e agradeço a todo apoio da franquia nesta relação construída com diálogo e
-                    confiança.”</p>
+            <div class="depoimento-titulo">
+                <h2>Depoimentos</h2>
+            </div>
+
+            <div class="depoimento--fraqueado">
+                <article class="depoimento--franqueado-txt">
+                    <p>“Sempre gostei de café mas nunca pensei em transformar isto em um negócio, mas quando conheci a
+                        JuCafé e seu modelo de negócio passei a vislumbrar um futuro promissor atuando com um produto
+                        que aprecio.”</p>
+
+                    <p>“Estou muito realizada e agradeço a todo apoio da franquia nesta relação construída com diálogo e
+                        confiança.”</p>
+                </article>
                 <h3>Kamila Kaffman</h3>
                 <small>Franqueada - São Paulo SP</small>
-            </article>
+            </div>
+
+            <div class="franqueado-img">
+                <img src="img/franqueado.png" alt="Kamila Kaffman">
+            </div>
         </section>
-        <section>
-            <h2>Modelo de Negócio</h2>
-            <article>
-                <img src="" alt="">
-                <div>
-                    <h3>Modelo Bistrô</h3>
+
+        <section id="ModeloNegocio">
+            <div class="modelo-titulo">
+                <h2>Modelo de Negócio</h2>
+            </div>
+
+            <div class="modelo-conteudo">
+                <div class="modelo-card">
+                    <img src="img/modeloBistro_Dsk.png" alt="Modelo Bistrô">
+                    <div class="modelo-titulo-card">
+                        <h3>Modelo Bistrô</h3>
+                    </div>
+                    <div class="modelo-texto-card">
+                        <ul>
+                            <li>a partir de 25 m²</li>
+                            <li>Investimento inicial a partir de 250 mil</li>
+                            <li>Faturamento anual R$ 2 milhões</li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <img src="img/modeloBistro_Dsk.png" alt="">
-                    <ul>
-                        <li>a partir de 25 m²</li>
-                        <li>Investimento inicial a partir de 250 mil</li>
-                        <li>Faturamento anual R$ 2 milhões</li>
-                    </ul>
+
+                <div class="modelo-card">
+                    <img src="img/modeloQuiosque_Dsk.png" alt="Modelo Quiosque">
+                    <div class="modelo-titulo-card">
+                        <h3>Modelo Quiosque</h3>
+                    </div>
+                    <div class="modelo-texto-card">
+                        <ul>
+                            <li>a partir de 10 m²</li>
+                            <li>Investimento inicial a partir de 150 mil</li>
+                            <li>Faturamento anual R$ 750 mil</li>
+                        </ul>
+                    </div>
                 </div>
-            </article>
-            <article>
-                <img src="img/modeloQuiosque_Dsk.png" alt="">
-                <div>
-                    <h3>Modelo Quiosque </h3>
-                </div>
-                <div>
-                    <ul>
-                        <li>a partir de 10 m²</li>
-                        <li>Investimento inicial a partir de 150 mil</li>
-                        <li>Faturamento anual R$ 750 mil</li>
-                    </ul>
-                </div>
-            </article>
+            </div>
         </section>
+
     </main>
 
-    <footer class="footer">
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="footer-social">
+                <span>Siga-nos nas redes sociais</span>
+                <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+            </div>
 
+            <div class="footer-contact">
+                <img src="img/contato.png" alt="Telefone">
+                <span>Entre em contato 0800 222 0032</span>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>Desenvolvido por YPTO Soluções Digitais</span>
+        </div>
     </footer>
+
 </body>
 
 </html>
