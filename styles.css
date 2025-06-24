@@ -308,8 +308,10 @@ header {
     display: flex;
     gap: 40px;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
+    align-items: center;
 }
+
 
 .modelo-card {
     background-color: #fff;
@@ -317,8 +319,7 @@ header {
      width: 613px;
     height: 556px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column
 }
 
 .modelo-card img {
