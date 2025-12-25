@@ -4,8 +4,8 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
 
 :root {
     --cor-principal: #982417;
@@ -14,6 +14,15 @@
     --cor-quarta: #fff;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Header */
 header {
     width: 100%;
     height: auto;
@@ -25,8 +34,6 @@ header {
     gap: 12px;
 }
 
-
-
 .header__logo {
     display: flex;
 }
@@ -34,29 +41,22 @@ header {
 .header__title {
     color: var(--cor-secundaria);
     font-family: "Just me again down here", sans-serif;
-
     font-size: 100px;
 }
-
 
 .header__title--brown {
     color: rgba(241, 198, 112, 0.969);
     font-size: 100px;
     font-family: "Just me again down here", sans-serif;
-
 }
 
-/* Navegação  */
-
-
+/* Navegação */
 .nav__lista {
     list-style: none;
     padding: 0;
     margin: 0;
     font-size: 32px;
-
 }
-
 
 .nav__lista--itens {
     display: inline;
@@ -64,29 +64,35 @@ header {
     color: var(--cor-secundaria);
     font-family: "Lekton", sans-serif;
     font-size: 32px;
+    transition: transform 0.3s ease;
+}
 
+.nav__lista a {
+    text-decoration: none;
+}
 
+.nav__lista a:hover .nav__lista--itens {
+    transform: translateY(-2px);
 }
 
 /* Banner */
-
 .franqueado {
     position: relative;
     width: 100%;
     overflow: hidden;
-  }
-  
-  .franqueado-bg {
+}
+
+.franqueado-bg {
     position: relative;
-  }
-  
-  .cafe-img {
+}
+
+.cafe-img {
     width: 100%;
     height: auto;
     display: block;
-  }
-  
-  .franqueado-card {
+}
+
+.franqueado-card {
     position: absolute;
     top: 50%;
     right: 10%;
@@ -97,66 +103,66 @@ header {
     max-width: 400px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  }
-  
-  .franqueado-card h2 {
+}
+
+.franqueado-card h2 {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 10px;
-  }
-  
-  .franqueado-card p {
+}
+
+.franqueado-card p {
     font-size: 18px;
     margin-bottom: 20px;
     color: #333;
-  }
-  
-  .franqueado-card .destaque {
+}
+
+.franqueado-card .destaque {
     color: #ff6600;
     font-weight: bold;
-  }
-  
-  .botoes {
+}
+
+.botoes {
     display: flex;
     justify-content: center;
     gap: 10px;
-  }
-  
-  .btn {
+}
+
+.btn {
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: bold;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .btn.branco {
+    transition: all 0.3s ease;
+}
+
+.btn.branco {
     background-color: white;
     color: #333;
     border: 2px solid #ccc;
-  }
-  
-  .btn.laranja {
+}
+
+.btn.laranja {
     background-color: #ff6600;
     color: white;
     box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  }
-  
-  .btn.branco:hover {
+}
+
+.btn.branco:hover {
     background-color: #f0f0f0;
-  }
-  
-  .btn.laranja:hover {
+    transform: translateY(-2px);
+}
+
+.btn.laranja:hover {
     background-color: #e65c00;
-  }
-  
+    transform: translateY(-2px);
+}
 
-
-/* Beneficios  */
+/* Benefícios */
 #Beneficios {
     background-color: var(--cor-secundaria);
-    width: 1,440px; 
-    height: 595px;
+    width: 100%;
+    min-height: 595px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -167,27 +173,30 @@ header {
     align-self: flex-start;
     margin-left: 40px;
     font-size: 24px;
-    color: #822b1b; 
+    color: #822b1b;
     font-weight: bold;
 }
+
 .beneficios-titulo h2 {
     font-size: 24px;
     border-left: 4px solid #822b1b;
     padding-left: 10px;
 }
 
-
 .Beneficios-itens--container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
     gap: 100px;
     margin-top: 80px;
+    padding: 0 20px;
 }
 
 .Beneficios-itens {
     background-color: white;
-    border: 1px solid #f39c12; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    border: 1px solid #f39c12;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 300px;
     height: 250px;
     padding: 20px;
@@ -196,6 +205,12 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Beneficios-itens:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .Beneficios-itens img {
@@ -216,28 +231,25 @@ header {
     padding: 0 10px;
 }
 
-
-
 /* Depoimento */
-
 #Depoimento {
     background-color: var(--cor-terciaria);
     color: white;
     font-family: sans-serif;
     width: 100%;
-    height: 595px;
+    min-height: 595px;
     padding: 50px;
-
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    box-sizing: border-box;
+    gap: 40px;
 }
 
 .depoimento-titulo {
-    align-self: flex-start;
+    width: 100%;
     font-size: 24px;
-    color: #ffffff; 
+    color: #ffffff;
     font-weight: bold;
 }
 
@@ -281,16 +293,13 @@ header {
     display: block;
 }
 
-
 /* Modelo de Negócio */
-
 #ModeloNegocio {
     background-color: white;
     color: black;
     font-family: sans-serif;
     width: 100%;
     padding: 50px;
-    box-sizing: border-box;
 }
 
 .modelo-titulo {
@@ -307,19 +316,23 @@ header {
 .modelo-conteudo {
     display: flex;
     gap: 40px;
-    justify-content: space-between;
-    flex-wrap: wrap; 
-    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-
 
 .modelo-card {
     background-color: #fff;
     border: 1px solid #ccc;
-     width: 613px;
-    height: 556px;
+    width: 100%;
+    max-width: 500px;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modelo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .modelo-card img {
@@ -329,7 +342,7 @@ header {
 
 .modelo-titulo-card {
     background-color: #8B0000;
-    width: 98%;
+    width: 100%;
     text-align: center;
     padding: 10px;
 }
@@ -344,7 +357,6 @@ header {
     background-color: white;
     width: 100%;
     padding: 20px;
-    box-sizing: border-box;
 }
 
 .modelo-texto-card ul {
@@ -360,41 +372,76 @@ header {
 }
 
 /* Footer */
-
 #footer {
-    background-color: #8B0000; /* vermelho escuro */
-    color: #F5F5DC; /* bege claro */
-    font-family: 'Comic Sans MS', cursive, sans-serif; /* fonte descontraída igual a da imagem */
+    background-color: #8B0000;
+    color: #F5F5DC;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
     padding: 20px;
     text-align: center;
-  }
-  
-  .footer-top {
+}
+
+.footer-top {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 40px;
     margin-bottom: 10px;
-  }
-  
-  .footer-social, .footer-contact {
+}
+
+.footer-social, .footer-contact {
     display: flex;
     align-items: center;
     gap: 10px;
-  }
-  
-  .footer-social span, .footer-contact span {
+}
+
+.footer-social span, .footer-contact span {
     font-size: 16px;
-  }
-  
-  .footer-social img, .footer-contact img {
+}
+
+.footer-social img, .footer-contact img {
     width: 24px;
     height: 24px;
-  }
-  
-  .footer-bottom {
+}
+
+.footer-bottom {
     font-size: 14px;
     margin-top: 10px;
-  }
-  
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header__title,
+    .header__title--brown {
+        font-size: 60px;
+    }
+
+    .nav__lista--itens {
+        font-size: 20px;
+        margin: 0 5px;
+    }
+
+    .franqueado-card {
+        position: static;
+        transform: none;
+        margin: 20px auto;
+        max-width: 90%;
+    }
+
+    .Beneficios-itens--container {
+        gap: 30px;
+    }
+
+    #Depoimento {
+        padding: 30px 20px;
+        justify-content: center;
+    }
+
+    .franqueado-img {
+        margin: 0 auto;
+    }
+
+    .modelo-conteudo {
+        gap: 30px;
+    }
+}
